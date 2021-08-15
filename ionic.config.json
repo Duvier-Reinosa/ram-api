@@ -1,0 +1,7 @@
+{
+  "name": "ram api",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
