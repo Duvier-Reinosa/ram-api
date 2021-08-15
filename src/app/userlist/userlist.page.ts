@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-userlist',
   templateUrl: './userlist.page.html',
@@ -18,9 +19,9 @@ export class UserlistPage implements OnInit {
     this.http.get<any>('https://rickandmortyapi.com/api/character')
     .subscribe(res => {
       console.log(res);
-      this.characters = res.results;
-      
+      this.characters = res.results; 
     })
+    
   }
 
 }
